@@ -55,10 +55,20 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 ## Example 2
 
     .card--dog {
+    background-color: pink;
+    }
+
+    .card--cat {
+    background-color: yellow;
+    }
+
+### Solution 2
+
+    .card card__dog {
         background-color: pink;
     }
     
-    .card--cat {
+    .card card__cat {
         background-color: yellow;
     }
 
@@ -80,7 +90,15 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
       }
 
 ## Example 4
+
+    ### Solution
+
     <p class="card__description__text">
+    Lorem ipsum dolor...
+    </p>
+
+### Solution 4
+    <p class="card__description--text">
         Lorem ipsum dolor...
     </p>
 
@@ -115,7 +133,13 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 
 ## Example 6
+
     .button--styled--disabled{
+    background-color: orange;
+    }
+
+### Solution 6
+    .button__styled--disabled{
         background-color: orange;
     }
 
@@ -133,6 +157,11 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 ## Example 8
     <article class="card card--dog card--dog--type1">
+    ...
+    </article>
+
+### Solution 8
+    <article class="card__dog--type1>
       ...
     </article>
 
@@ -167,7 +196,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 
 ## Example 10
-    .card--dog--type1 header{
+    .card__dog--type1 header{
         background-color: green;
     }
 
@@ -176,6 +205,20 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
     .card--dog--type3 header{
+        background-color: orange;
+    }
+
+### Solution 10
+
+    .card__header--type1 {
+        background-color: green;
+    }
+
+    .card__header--type2 {
+        background-color: purple;
+    }
+
+    .card__header--type3 {
         background-color: orange;
     }
 
@@ -198,6 +241,15 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         ...
     </section>
 
+### Solution 12
+
+    <section class="dog">
+        ...
+    </section>
+
+> Class coud be just "dog" and we add the flex properties...
+
+
 ## Example 13
     <footer class="card__options">
     <div class="card__buttons">
@@ -212,6 +264,14 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         <h3 class="">Dog poster - 50nok</h3>
     </header>
 
+### Solution 14
+      <header class="">
+        <h2 class="card__dog-poster">Dog Poster</h2>
+        <h3 class="card__dog-poster">Dog poster - 50nok</h3>
+    </header>
+
+> Hard to know what to put when you don't see the rest of the code...
+
 ## Example 15
     <header class="card__header">
         <h2 class="card__title--cat">NEW! Cat Poster</h2>
@@ -220,6 +280,11 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 ## Example 16
     <section class="catbox">
+        ...
+    </section>
+
+### Solution 16
+     <section class="cats">
         ...
     </section>
 
@@ -233,6 +298,21 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     <header class="main_header">
         <h1>BEM</h1>
         <button class="styled disabled wishlist">
+            <span>🚀</span>
+            <span>Wish list</span>
+        </button>
+    </header>
+    </header>
+
+    <main class="main">
+        <section>
+        <section>
+    </main>
+
+### Solution 18
+    <header class="main-header">
+        <h1>BEM</h1>
+        <button class="styled--wishlist styled--disabled">
             <span>🚀</span>
             <span>Wish list</span>
         </button>
@@ -262,6 +342,13 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         ...
     }
 
+### Solution 20
+    .wishlist {
+        ...
+    }
+
+> ID should only be used for unique edits for elements
+
 ## Example 21
     <main class="main_flex-container">
         ...
@@ -275,6 +362,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         ...
     </section>
 
+### Solution 22
+    <section class="card-section-cat">
+        ...
+    </section>
+
+
 ## Example 23
 > [!TIP]
 > Let's assume that in some case it make sense to call a section "cat" or "dog", the section "cat" will consist of multiple cards of cats, and the section "dog" will consist of multiple cards of dogs. Let's not focuse here on BEM. Nevertheless, how could you improve on class naming?
@@ -287,6 +380,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 ## Example 24
     .button__div1,
     .button__div2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+### Solution 24
+    .button {
         display: flex;
         flex-direction: row-reverse;
     }
@@ -310,6 +409,25 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
     header>button:active {
+      background-color: hsl(180, 29%, 50%);
+    }
+
+### Solution 26
+    header {
+      background-color: hsl(180, 31%, 95%);
+      ...
+    }
+
+    header__button {
+      border: none;
+      ...
+    }
+
+    header__button:hover {
+       background-color: hsl(180, 25%, 73%);
+    }
+
+    header__button:active {
       background-color: hsl(180, 29%, 50%);
     }
 

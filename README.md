@@ -1,5 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/P3kz0bBR)
-# BEM in practice
+# BEM in practice e
 
 ## Part 1 - BEM
 Below you can see examples of code and style from class exercises: 

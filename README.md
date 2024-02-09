@@ -62,7 +62,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 3
-    .Newcard {
+    .newcard {
       border: solid 1px rgb(255, 242, 0);
       border-width: 2rem;
       max-width: 260px;
@@ -81,15 +81,16 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 > [!TIP]
 > There are more mistakes to fix here :)
 
-    <section class="card">
-        <article class="card article__dog">
-            <aside class="article__dog aside">
-                <figure class="article__dog figure">
-                    <img src="..." alt="Dummy Image" class="" />
-                </figure>
-             </aside>
-         </article>
-    </section>
+<section class="card">
+    <article class="card__article">
+        <aside class="card__aside">
+            <figure class="card__figure">
+                <img src="..." alt="Dummy Image" class="card__image" />
+            </figure>
+         </aside>
+     </article>
+</section>
+
 
 ## Example 6
     .button--styled--disabled{
@@ -97,9 +98,10 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 7
-    <article class="card cat--card">
-      ...
-    </article>
+<article class="card card--cat">
+  ...
+</article>
+
 
 ## Example 8
     <article class="card card--dog card--dog--type1">
@@ -107,20 +109,17 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </article>
 
 ## Example 9
-    .card {
-        border: solid 1px #000;
-        max-width: 360px;
-        padding: 20px;
-    }
-  
-    .card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
+.card {
+    border: solid 1px #000;
+    max-width: 360px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px; /* Choose padding based on your design requirements */
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
 
 ## Example 10
     .card--dog--type1 header{
@@ -136,7 +135,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 11
-    <main class="main__flex-wrap">
+    <main class="main__content">
         ...
     </main>
 > [!TIP]
@@ -149,11 +148,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </section>
 
 ## Example 13
-    <footer class="card__options">
-      <div class="card__options-buttons">
-       ...
-      </div>
-    </footer>
+<footer class="card__options">
+  <div class="card__buttons">
+    ...
+  </div>
+</footer>
+
 
 ## Example 14
     <header class="">

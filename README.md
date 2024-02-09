@@ -1,4 +1,5 @@
-# BEM in practice
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/P3kz0bBR)
+# BEM in practice e
 
 ## Part 1 - BEM
 Below you can see examples of code and style from class exercises: 
@@ -52,16 +53,36 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 > this solution can be correct in case class `card_header` consist of some styles that cannot be inherit and needed to be specified and are shared between all headers
 
 ## Example 2
+
     .card--dog {
+    background-color: pink;
+    }
+
+    .card--cat {
+    background-color: yellow;
+    }
+
+### Solution 2
+
+    .card card__dog {
         background-color: pink;
     }
     
-    .card--cat {
+    .card card__cat {
         background-color: yellow;
     }
 
 ## Example 3
-    .Newcard {
+
+.Newcard {
+  border: solid 1px rgb(255, 242, 0);
+  border-width: 2rem;
+  max-width: 260px;
+  padding: 10px;
+  }
+
+## Solution 3
+    .newcard {
       border: solid 1px rgb(255, 242, 0);
       border-width: 2rem;
       max-width: 260px;
@@ -69,11 +90,31 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
       }
 
 ## Example 4
+
+    ### Solution
+
     <p class="card__description__text">
+    Lorem ipsum dolor...
+    </p>
+
+### Solution 4
+    <p class="card__description--text">
         Lorem ipsum dolor...
     </p>
 
 ## Example 5
+
+    <section class="card">
+    <article class="card article__dog">
+        <aside class="article__dog aside">
+            <figure class="article__dog figure">
+                <img src="..." alt="Dummy Image" class="" />
+            </figure>
+         </aside>
+     </article>
+</section>
+
+## Solution 5
 > [!TIP]
 > What is a purpose of section? does it make sense to call it "card"?
 
@@ -81,48 +122,81 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 > There are more mistakes to fix here :)
 
     <section class="card">
-        <article class="card article__dog">
-            <aside class="article__dog aside">
-                <figure class="article__dog figure">
-                    <img src="..." alt="Dummy Image" class="" />
-                </figure>
-             </aside>
-         </article>
+    <article class="card__article">
+        <aside class="card__aside">
+            <figure class="card__figure">
+                <img src="..." alt="Dummy Image" class="card__image" />
+            </figure>
+         </aside>
+     </article>
     </section>
 
+
 ## Example 6
+
     .button--styled--disabled{
+    background-color: orange;
+    }
+
+### Solution 6
+    .button__styled--disabled{
         background-color: orange;
     }
 
 ## Example 7
+
     <article class="card cat--card">
-      ...
+  ...
     </article>
+
+## Solution 7
+    <article class="card card--cat">
+  ...
+    </article>
+
 
 ## Example 8
     <article class="card card--dog card--dog--type1">
+    ...
+    </article>
+
+### Solution 8
+    <article class="card__dog--type1>
       ...
     </article>
 
 ## Example 9
-    .card {
-        border: solid 1px #000;
-        max-width: 360px;
-        padding: 20px;
-    }
-  
-    .card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
+
+.card {
+    border: solid 1px #000;
+    max-width: 360px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+## Solution 9
+.card {
+    border: solid 1px #000;
+    max-width: 360px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px; /* Choose padding based on your design requirements */
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
 
 ## Example 10
-    .card--dog--type1 header{
+    .card__dog--type1 header{
         background-color: green;
     }
 
@@ -134,8 +208,28 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         background-color: orange;
     }
 
+### Solution 10
+
+    .card__header--type1 {
+        background-color: green;
+    }
+
+    .card__header--type2 {
+        background-color: purple;
+    }
+
+    .card__header--type3 {
+        background-color: orange;
+    }
+
 ## Example 11
+
     <main class="main__flex-wrap">
+    ...
+    </main>
+
+## Solution 11
+    <main class="main__content">
         ...
     </main>
 > [!TIP]
@@ -147,18 +241,36 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         ...
     </section>
 
+### Solution 12
+
+    <section class="dog">
+        ...
+    </section>
+
+> Class coud be just "dog" and we add the flex properties...
+
+
 ## Example 13
     <footer class="card__options">
-      <div class="card__options-buttons">
-       ...
-      </div>
+    <div class="card__buttons">
+    ...
+     </div>
     </footer>
+
 
 ## Example 14
     <header class="">
         <h2 class="card__dog--poster">Dog Poster</h2>
         <h3 class="">Dog poster - 50nok</h3>
     </header>
+
+### Solution 14
+      <header class="">
+        <h2 class="card__dog-poster">Dog Poster</h2>
+        <h3 class="card__dog-poster">Dog poster - 50nok</h3>
+    </header>
+
+> Hard to know what to put when you don't see the rest of the code...
 
 ## Example 15
     <header class="card__header">
@@ -168,6 +280,11 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 ## Example 16
     <section class="catbox">
+        ...
+    </section>
+
+### Solution 16
+     <section class="cats">
         ...
     </section>
 
@@ -181,6 +298,21 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     <header class="main_header">
         <h1>BEM</h1>
         <button class="styled disabled wishlist">
+            <span>🚀</span>
+            <span>Wish list</span>
+        </button>
+    </header>
+    </header>
+
+    <main class="main">
+        <section>
+        <section>
+    </main>
+
+### Solution 18
+    <header class="main-header">
+        <h1>BEM</h1>
+        <button class="styled--wishlist styled--disabled">
             <span>🚀</span>
             <span>Wish list</span>
         </button>
@@ -210,6 +342,13 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         ...
     }
 
+### Solution 20
+    .wishlist {
+        ...
+    }
+
+> ID should only be used for unique edits for elements
+
 ## Example 21
     <main class="main_flex-container">
         ...
@@ -223,6 +362,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         ...
     </section>
 
+### Solution 22
+    <section class="card-section-cat">
+        ...
+    </section>
+
+
 ## Example 23
 > [!TIP]
 > Let's assume that in some case it make sense to call a section "cat" or "dog", the section "cat" will consist of multiple cards of cats, and the section "dog" will consist of multiple cards of dogs. Let's not focuse here on BEM. Nevertheless, how could you improve on class naming?
@@ -235,6 +380,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 ## Example 24
     .button__div1,
     .button__div2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+### Solution 24
+    .button {
         display: flex;
         flex-direction: row-reverse;
     }
@@ -258,6 +409,25 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
     header>button:active {
+      background-color: hsl(180, 29%, 50%);
+    }
+
+### Solution 26
+    header {
+      background-color: hsl(180, 31%, 95%);
+      ...
+    }
+
+    header__button {
+      border: none;
+      ...
+    }
+
+    header__button:hover {
+       background-color: hsl(180, 25%, 73%);
+    }
+
+    header__button:active {
       background-color: hsl(180, 29%, 50%);
     }
 

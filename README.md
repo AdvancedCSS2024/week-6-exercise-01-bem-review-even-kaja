@@ -53,6 +53,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 > this solution can be correct in case class `card_header` consist of some styles that cannot be inherit and needed to be specified and are shared between all headers
 
 ## Example 2
+
     .card--dog {
         background-color: pink;
     }
@@ -62,6 +63,15 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 3
+
+.Newcard {
+  border: solid 1px rgb(255, 242, 0);
+  border-width: 2rem;
+  max-width: 260px;
+  padding: 10px;
+  }
+
+## Solution 3
     .newcard {
       border: solid 1px rgb(255, 242, 0);
       border-width: 2rem;
@@ -75,6 +85,18 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </p>
 
 ## Example 5
+
+<section class="card">
+    <article class="card article__dog">
+        <aside class="article__dog aside">
+            <figure class="article__dog figure">
+                <img src="..." alt="Dummy Image" class="" />
+            </figure>
+         </aside>
+     </article>
+</section>
+
+## Solution 5
 > [!TIP]
 > What is a purpose of section? does it make sense to call it "card"?
 
@@ -98,6 +120,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 7
+
+<article class="card cat--card">
+  ...
+</article>
+
+## Solution 7
 <article class="card card--cat">
   ...
 </article>
@@ -109,6 +137,23 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </article>
 
 ## Example 9
+
+.card {
+    border: solid 1px #000;
+    max-width: 360px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+## Solution 9
 .card {
     border: solid 1px #000;
     max-width: 360px;
@@ -135,6 +180,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 11
+
+<main class="main__flex-wrap">
+    ...
+</main>
+
+## Solution 11
     <main class="main__content">
         ...
     </main>

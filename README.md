@@ -53,6 +53,17 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 > this solution can be correct in case class `card_header` consist of some styles that cannot be inherit and needed to be specified and are shared between all headers
 
 ## Example 2
+
+    .card--dog {
+    background-color: pink;
+    }
+
+    .card--cat {
+    background-color: yellow;
+    }
+
+### Solution
+
     .card card__dog {
         background-color: pink;
     }
@@ -70,7 +81,15 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
       }
 
 ## Example 4
-    <p class="card__description-text">
+
+    ### Solution
+
+    <p class="card__description__text">
+    Lorem ipsum dolor...
+    </p>
+
+### Solution
+    <p class="card__description--text">
         Lorem ipsum dolor...
     </p>
 
@@ -92,6 +111,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </section>
 
 ## Example 6
+
+    .button--styled--disabled{
+    background-color: orange;
+    }
+
+### Solution
     .button__styled--disabled{
         background-color: orange;
     }
@@ -102,7 +127,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </article>
 
 ## Example 8
-    <article class="card card__dog--type1>
+    <article class="card card--dog card--dog--type1">
+    ...
+    </article>
+
+### Solution
+    <article class="card__dog--type1>
       ...
     </article>
 
@@ -132,6 +162,20 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
     .card--dog--type3 header{
+        background-color: orange;
+    }
+
+### Solution
+
+    .card__dog__header--type1 {
+        background-color: green;
+    }
+
+    .card__dog__header--type2 {
+        background-color: purple;
+    }
+
+    .card__dog__header--type3 {
         background-color: orange;
     }
 

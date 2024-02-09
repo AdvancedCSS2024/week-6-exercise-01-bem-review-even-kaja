@@ -86,7 +86,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 ## Example 5
 
-<section class="card">
+    <section class="card">
     <article class="card article__dog">
         <aside class="article__dog aside">
             <figure class="article__dog figure">
@@ -103,7 +103,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 > [!TIP]
 > There are more mistakes to fix here :)
 
-<section class="card">
+    <section class="card">
     <article class="card__article">
         <aside class="card__aside">
             <figure class="card__figure">
@@ -111,7 +111,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
             </figure>
          </aside>
      </article>
-</section>
+    </section>
 
 
 ## Example 6
@@ -121,14 +121,14 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 ## Example 7
 
-<article class="card cat--card">
+    <article class="card cat--card">
   ...
-</article>
+    </article>
 
 ## Solution 7
-<article class="card card--cat">
+    <article class="card card--cat">
   ...
-</article>
+    </article>
 
 
 ## Example 8
@@ -181,9 +181,9 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 ## Example 11
 
-<main class="main__flex-wrap">
+    <main class="main__flex-wrap">
     ...
-</main>
+    </main>
 
 ## Solution 11
     <main class="main__content">
@@ -199,11 +199,11 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </section>
 
 ## Example 13
-<footer class="card__options">
-  <div class="card__buttons">
+    <footer class="card__options">
+    <div class="card__buttons">
     ...
-  </div>
-</footer>
+     </div>
+    </footer>
 
 
 ## Example 14
